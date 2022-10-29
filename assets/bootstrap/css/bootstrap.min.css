@@ -110,6 +110,32 @@ hr.star-dark:after {
     font-family: FontAwesome;
     font-size: 2em;
 }
+.honeypot-field {
+    display: none;
+}
+
+.flexprop{
+    display: flex;
+    justify-content: center;
+}
+
+.button1{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#g-recaptcha-response {
+    display: block !important;
+    position: absolute;
+    margin: -78px 0 0 0 !important;
+    width: 302px !important;
+    height: 76px !important;
+    z-index: -999999;
+    opacity: 0;
+}
+
 
 .logo {
     width: 45px;
