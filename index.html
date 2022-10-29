@@ -222,6 +222,8 @@
                                         class="form-label">Message</label><small
                                         class="form-text text-danger help-block"></small></div>
                             </div>
+                            <div class="g-recaptcha" required style="padding-bottom: 35px;"
+                                data-sitekey="6Lf9bMIiAAAAAH0w3j_Z2IvGnbO0UKUpXAYo3c85"> </div>
 
                             <div>
                                 <button class="btn btn-primary btn-xl" id="sendMessageButton"><i
@@ -362,7 +364,14 @@
 
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>window.onload = function () {
+            var $recaptcha = document.querySelector('#g-recaptcha-response');
 
+            if ($recaptcha) {
+                $recaptcha.setAttribute("required", "required");
+            }
+        };
+    </script>
     <script src="assets/js/freelancer.js"></script>
     <script data-cfasync="false" src="assets/js/form-submission-handler.js"></script>
 </body>
