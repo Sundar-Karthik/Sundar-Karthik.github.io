@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Sundar Karthik S - Portfolio</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Sundar-Karthik/Personal/main/sundar%20karthik%20s%20(2).png">
+    <link rel="icon" type="image/x-icon"
+        href="https://raw.githubusercontent.com/Sundar-Karthik/Personal/main/sundar%20karthik%20s%20(2).png">
 </head>
 
 <body id="home" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
@@ -115,8 +116,11 @@
                         to meet the demand for trained engineers for various industrial and development projects in the
                         state of Tamilnadu and the rest of India.<br><br>
                         CGPA: 8.0 <br><br>Activities: Co-leader at Career in Tech (A
-                        career development club to that helps students to be aware and develop on their career path)<p class="list-inline-item">><a href="https://career.psdc.ml/"><i class="fa fa-external-link"></i></a></p></p>
-                        
+                        career development club to that helps students to be aware and develop on their career path)
+                    <p class="list-inline-item">><a href="https://career.psdc.ml/"><i
+                                class="fa fa-external-link"></i></a></p>
+                    </p>
+
                     <br>
 
                 </div>
@@ -185,31 +189,49 @@
             <hr class="star-dark mb-5">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <form id="contactForm" name="sentMessage" novalidate="novalidate">
-                        <div class="control-group">
-                            <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="text"
-                                    id="name" required="" placeholder="Name"><label
-                                    class="form-label">Name</label><small
-                                    class="form-text text-danger help-block"></small></div>
+                    <form class="gform" id="contactForm" method="POST"
+                        action="https://script.google.com/macros/s/AKfycbyCP9sMcfWe9UI34SIJVjjziuUn-JwlM78f9p_sAP07OSwX9dRJAxWSV9QAgzHeQ1LN/exec">
+                        <div class="form-elements" >
+                            <div class="control-group">
+                                <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="text"
+                                        id="name" required name="name" placeholder="Name"><label
+                                        class="form-label">Name</label><small
+                                        class="form-text text-danger help-block"></small></div>
+                            </div>
+                            <div class="control-group">
+                                <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="email"
+                                        id="email" required name="email" placeholder="Email Address"><label
+                                        class="form-label">Email
+                                        Address</label><small class="form-text text-danger help-block"></small></div>
+                            </div>
+                            <div class="control-group">
+                                <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="tel"
+                                        id="phone" required name="phone" placeholder="Phone Number"><label
+                                        class="form-label">Phone
+                                        Number</label><small class="form-text text-danger help-block"></small></div>
+                            </div>
+
+                            <fieldset class="pure-group honeypot-field">
+                                <label for="honeypot"></label>
+                                <input id="honeypot" type="text" name="honeypot" value="" />
+                            </fieldset>
+                            
+                            <div class="control-group">
+                                <div class="mb-5 form-floating controls pb-2"><textarea name="message"
+                                        class="form-control" id="message" required placeholder="Message"
+                                        style="height: 150px;"></textarea><label
+                                        class="form-label">Message</label><small
+                                        class="form-text text-danger help-block"></small></div>
+                            </div>
+
+                            <div>
+                                <button class="btn btn-primary btn-xl" id="sendMessageButton"><i
+                                        class="fa fa-paper-plane"></i>&nbsp;Send</button>
+                            </div>
                         </div>
-                        <div class="control-group">
-                            <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="email"
-                                    id="email" required="" placeholder="Email Address"><label class="form-label">Email
-                                    Address</label><small class="form-text text-danger help-block"></small></div>
-                        </div>
-                        <div class="control-group">
-                            <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="tel"
-                                    id="phone" required="" placeholder="Phone Number"><label class="form-label">Phone
-                                    Number</label><small class="form-text text-danger help-block"></small></div>
-                        </div>
-                        <div class="control-group">
-                            <div class="mb-5 form-floating controls pb-2"><textarea class="form-control" id="message"
-                                    required="" placeholder="Message" style="height: 150px;"></textarea><label
-                                    class="form-label">Message</label><small
-                                    class="form-text text-danger help-block"></small></div>
-                        </div>
-                        <div id="success"></div>
-                        <div><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button>
+                        <div class="thankyou_message text-secondary text-center" style="display:none; padding-top: 35px;">
+                            <h4><em>Thanks</em> for contacting us!
+                                Will get back to you soon! </h4>
                         </div>
                     </form>
                 </div>
@@ -228,7 +250,8 @@
                     <ul class="list-inline">
                         <li class="list-inline-item"><a
                                 class="btn btn-outline-light text-center btn-social rounded-circle" role="button"
-                                href="https://www.instagram.com/sundarkarth.ik/"><i class="fa fa-instagram fa-fw"></i></a></li>
+                                href="https://www.instagram.com/sundarkarth.ik/"><i
+                                    class="fa fa-instagram fa-fw"></i></a></li>
                         <li class="list-inline-item"><a
                                 class="btn btn-outline-light text-center btn-social rounded-circle" role="button"
                                 href="#"><i class="fa fa-twitter fa-fw"></i></a></li>
@@ -237,10 +260,12 @@
                                 href="https://github.com/Sundar-Karthik"><i class="fa fa-github fa-fw"></i></a></li>
                         <li class="list-inline-item"><a
                                 class="btn btn-outline-light text-center btn-social rounded-circle" role="button"
-                                href="https://www.linkedin.com/in/sundarkarthik-s"><i class="fa fa-linkedin fa-fw"></i></a></li>
+                                href="https://www.linkedin.com/in/sundarkarthik-s"><i
+                                    class="fa fa-linkedin fa-fw"></i></a></li>
                         <li class="list-inline-item"><a
                                 class="btn btn-outline-light text-center btn-social rounded-circle" role="button"
-                                href="https://www.facebook.com/sundarkarthik.sundar.3"><i class="fa fa-facebook fa-fw"></i></a></li>
+                                href="https://www.facebook.com/sundarkarthik.sundar.3"><i
+                                    class="fa fa-facebook fa-fw"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -291,8 +316,9 @@
                                 <h2 class="text-uppercase text-secondary mb-0">Career In Tech</h2>
                                 <hr class="star-dark mb-5"><img class="img-fluid mb-5"
                                     src="assets/img/portfolio/careerintech.png">
-                                <p class="mb-5">A Website developed for a Club under Panimalar Student Development Community - Career In Tech.<br>
-                                    Stack:HTML, CSS, BootStrap, Javascript.<br><br> 
+                                <p class="mb-5">A Website developed for a Club under Panimalar Student Development
+                                    Community - Career In Tech.<br>
+                                    Stack:HTML, CSS, BootStrap, Javascript.<br><br>
                                     <a href="https://career.psdc.ml/">Career In Tech - Click Me</a><br>
                                     <a href="https://github.com/Sundar-Karthik/career">Github-Repository</a>
                                 </p>
@@ -320,8 +346,9 @@
                                     src="assets/img/portfolio/pricepanel.png">
                                 <p class="mb-5">A mini Price-panel Developed for a Upcoming Project.<br>
                                     Stack:HTML, CSS, BootStrap, Javascript.<br><br>
-                                    <a href="https://sundar-karthik.github.io/price-panel/">Price-Panel- Click Me</a><br>
-                                    <a href="https://github.com/Sundar-Karthik/price-panel/">Github-Repository</a> 
+                                    <a href="https://sundar-karthik.github.io/price-panel/">Price-Panel- Click
+                                        Me</a><br>
+                                    <a href="https://github.com/Sundar-Karthik/price-panel/">Github-Repository</a>
                                 </p>
                             </div>
                         </div>
@@ -333,10 +360,12 @@
             </div>
         </div>
     </div>
-    
+
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
     <script src="assets/js/freelancer.js"></script>
+    <script data-cfasync="false" src="assets/js/form-submission-handler.js"></script>
 </body>
 
 </html>
